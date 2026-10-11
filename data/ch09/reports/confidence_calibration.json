@@ -1,0 +1,594 @@
+{
+ "meta": {
+  "generated_at": "2026-09-29 16:08",
+  "strategy": "hybrid_rerank",
+  "dataset": "tests/data/eval_ch04.jsonl",
+  "score": "reranker_top1",
+  "n_answerable": 240,
+  "n_absent": 60
+ },
+ "distribution": {
+  "answerable": {
+   "n": 240,
+   "min": 0.021,
+   "p25": 0.784,
+   "p50": 0.959,
+   "p75": 0.99,
+   "max": 1.0
+  },
+  "absent": {
+   "n": 60,
+   "min": 0.0,
+   "p25": 0.002,
+   "p50": 0.006,
+   "p75": 0.032,
+   "max": 0.629
+  }
+ },
+ "scan": [
+  {
+   "t": 0.05,
+   "pass_rate": 0.988,
+   "leak_rate": 0.15,
+   "youden_j": 0.838
+  },
+  {
+   "t": 0.06,
+   "pass_rate": 0.988,
+   "leak_rate": 0.133,
+   "youden_j": 0.854
+  },
+  {
+   "t": 0.07,
+   "pass_rate": 0.979,
+   "leak_rate": 0.133,
+   "youden_j": 0.846
+  },
+  {
+   "t": 0.08,
+   "pass_rate": 0.975,
+   "leak_rate": 0.117,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.09,
+   "pass_rate": 0.971,
+   "leak_rate": 0.117,
+   "youden_j": 0.854
+  },
+  {
+   "t": 0.1,
+   "pass_rate": 0.971,
+   "leak_rate": 0.117,
+   "youden_j": 0.854
+  },
+  {
+   "t": 0.11,
+   "pass_rate": 0.967,
+   "leak_rate": 0.117,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.12,
+   "pass_rate": 0.967,
+   "leak_rate": 0.117,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.13,
+   "pass_rate": 0.963,
+   "leak_rate": 0.083,
+   "youden_j": 0.879
+  },
+  {
+   "t": 0.14,
+   "pass_rate": 0.963,
+   "leak_rate": 0.083,
+   "youden_j": 0.879
+  },
+  {
+   "t": 0.15,
+   "pass_rate": 0.963,
+   "leak_rate": 0.083,
+   "youden_j": 0.879
+  },
+  {
+   "t": 0.16,
+   "pass_rate": 0.963,
+   "leak_rate": 0.067,
+   "youden_j": 0.896
+  },
+  {
+   "t": 0.17,
+   "pass_rate": 0.958,
+   "leak_rate": 0.067,
+   "youden_j": 0.892
+  },
+  {
+   "t": 0.18,
+   "pass_rate": 0.958,
+   "leak_rate": 0.067,
+   "youden_j": 0.892
+  },
+  {
+   "t": 0.19,
+   "pass_rate": 0.958,
+   "leak_rate": 0.05,
+   "youden_j": 0.908
+  },
+  {
+   "t": 0.2,
+   "pass_rate": 0.958,
+   "leak_rate": 0.033,
+   "youden_j": 0.925
+  },
+  {
+   "t": 0.21,
+   "pass_rate": 0.958,
+   "leak_rate": 0.033,
+   "youden_j": 0.925
+  },
+  {
+   "t": 0.22,
+   "pass_rate": 0.954,
+   "leak_rate": 0.033,
+   "youden_j": 0.921
+  },
+  {
+   "t": 0.23,
+   "pass_rate": 0.946,
+   "leak_rate": 0.033,
+   "youden_j": 0.912
+  },
+  {
+   "t": 0.24,
+   "pass_rate": 0.938,
+   "leak_rate": 0.033,
+   "youden_j": 0.904
+  },
+  {
+   "t": 0.25,
+   "pass_rate": 0.938,
+   "leak_rate": 0.033,
+   "youden_j": 0.904
+  },
+  {
+   "t": 0.26,
+   "pass_rate": 0.938,
+   "leak_rate": 0.033,
+   "youden_j": 0.904
+  },
+  {
+   "t": 0.27,
+   "pass_rate": 0.938,
+   "leak_rate": 0.033,
+   "youden_j": 0.904
+  },
+  {
+   "t": 0.28,
+   "pass_rate": 0.938,
+   "leak_rate": 0.033,
+   "youden_j": 0.904
+  },
+  {
+   "t": 0.29,
+   "pass_rate": 0.933,
+   "leak_rate": 0.033,
+   "youden_j": 0.9
+  },
+  {
+   "t": 0.3,
+   "pass_rate": 0.929,
+   "leak_rate": 0.033,
+   "youden_j": 0.896
+  },
+  {
+   "t": 0.31,
+   "pass_rate": 0.929,
+   "leak_rate": 0.033,
+   "youden_j": 0.896
+  },
+  {
+   "t": 0.32,
+   "pass_rate": 0.925,
+   "leak_rate": 0.033,
+   "youden_j": 0.892
+  },
+  {
+   "t": 0.33,
+   "pass_rate": 0.921,
+   "leak_rate": 0.033,
+   "youden_j": 0.887
+  },
+  {
+   "t": 0.34,
+   "pass_rate": 0.917,
+   "leak_rate": 0.033,
+   "youden_j": 0.883
+  },
+  {
+   "t": 0.35,
+   "pass_rate": 0.917,
+   "leak_rate": 0.033,
+   "youden_j": 0.883
+  },
+  {
+   "t": 0.36,
+   "pass_rate": 0.912,
+   "leak_rate": 0.033,
+   "youden_j": 0.879
+  },
+  {
+   "t": 0.37,
+   "pass_rate": 0.908,
+   "leak_rate": 0.033,
+   "youden_j": 0.875
+  },
+  {
+   "t": 0.38,
+   "pass_rate": 0.904,
+   "leak_rate": 0.033,
+   "youden_j": 0.871
+  },
+  {
+   "t": 0.39,
+   "pass_rate": 0.9,
+   "leak_rate": 0.033,
+   "youden_j": 0.867
+  },
+  {
+   "t": 0.4,
+   "pass_rate": 0.9,
+   "leak_rate": 0.033,
+   "youden_j": 0.867
+  },
+  {
+   "t": 0.41,
+   "pass_rate": 0.896,
+   "leak_rate": 0.033,
+   "youden_j": 0.863
+  },
+  {
+   "t": 0.42,
+   "pass_rate": 0.892,
+   "leak_rate": 0.033,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.43,
+   "pass_rate": 0.892,
+   "leak_rate": 0.033,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.44,
+   "pass_rate": 0.892,
+   "leak_rate": 0.033,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.45,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.46,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.47,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.48,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.49,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.5,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.51,
+   "pass_rate": 0.883,
+   "leak_rate": 0.033,
+   "youden_j": 0.85
+  },
+  {
+   "t": 0.52,
+   "pass_rate": 0.883,
+   "leak_rate": 0.017,
+   "youden_j": 0.867
+  },
+  {
+   "t": 0.53,
+   "pass_rate": 0.875,
+   "leak_rate": 0.017,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.54,
+   "pass_rate": 0.875,
+   "leak_rate": 0.017,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.55,
+   "pass_rate": 0.875,
+   "leak_rate": 0.017,
+   "youden_j": 0.858
+  },
+  {
+   "t": 0.56,
+   "pass_rate": 0.863,
+   "leak_rate": 0.017,
+   "youden_j": 0.846
+  },
+  {
+   "t": 0.57,
+   "pass_rate": 0.863,
+   "leak_rate": 0.017,
+   "youden_j": 0.846
+  },
+  {
+   "t": 0.58,
+   "pass_rate": 0.846,
+   "leak_rate": 0.017,
+   "youden_j": 0.829
+  },
+  {
+   "t": 0.59,
+   "pass_rate": 0.842,
+   "leak_rate": 0.017,
+   "youden_j": 0.825
+  },
+  {
+   "t": 0.6,
+   "pass_rate": 0.842,
+   "leak_rate": 0.017,
+   "youden_j": 0.825
+  },
+  {
+   "t": 0.61,
+   "pass_rate": 0.838,
+   "leak_rate": 0.017,
+   "youden_j": 0.821
+  },
+  {
+   "t": 0.62,
+   "pass_rate": 0.838,
+   "leak_rate": 0.017,
+   "youden_j": 0.821
+  },
+  {
+   "t": 0.63,
+   "pass_rate": 0.833,
+   "leak_rate": 0.0,
+   "youden_j": 0.833
+  },
+  {
+   "t": 0.64,
+   "pass_rate": 0.821,
+   "leak_rate": 0.0,
+   "youden_j": 0.821
+  },
+  {
+   "t": 0.65,
+   "pass_rate": 0.817,
+   "leak_rate": 0.0,
+   "youden_j": 0.817
+  },
+  {
+   "t": 0.66,
+   "pass_rate": 0.812,
+   "leak_rate": 0.0,
+   "youden_j": 0.812
+  },
+  {
+   "t": 0.67,
+   "pass_rate": 0.804,
+   "leak_rate": 0.0,
+   "youden_j": 0.804
+  },
+  {
+   "t": 0.68,
+   "pass_rate": 0.8,
+   "leak_rate": 0.0,
+   "youden_j": 0.8
+  },
+  {
+   "t": 0.69,
+   "pass_rate": 0.783,
+   "leak_rate": 0.0,
+   "youden_j": 0.783
+  },
+  {
+   "t": 0.7,
+   "pass_rate": 0.783,
+   "leak_rate": 0.0,
+   "youden_j": 0.783
+  },
+  {
+   "t": 0.71,
+   "pass_rate": 0.775,
+   "leak_rate": 0.0,
+   "youden_j": 0.775
+  },
+  {
+   "t": 0.72,
+   "pass_rate": 0.767,
+   "leak_rate": 0.0,
+   "youden_j": 0.767
+  },
+  {
+   "t": 0.73,
+   "pass_rate": 0.767,
+   "leak_rate": 0.0,
+   "youden_j": 0.767
+  },
+  {
+   "t": 0.74,
+   "pass_rate": 0.762,
+   "leak_rate": 0.0,
+   "youden_j": 0.762
+  },
+  {
+   "t": 0.75,
+   "pass_rate": 0.762,
+   "leak_rate": 0.0,
+   "youden_j": 0.762
+  },
+  {
+   "t": 0.76,
+   "pass_rate": 0.762,
+   "leak_rate": 0.0,
+   "youden_j": 0.762
+  },
+  {
+   "t": 0.77,
+   "pass_rate": 0.762,
+   "leak_rate": 0.0,
+   "youden_j": 0.762
+  },
+  {
+   "t": 0.78,
+   "pass_rate": 0.754,
+   "leak_rate": 0.0,
+   "youden_j": 0.754
+  },
+  {
+   "t": 0.79,
+   "pass_rate": 0.746,
+   "leak_rate": 0.0,
+   "youden_j": 0.746
+  },
+  {
+   "t": 0.8,
+   "pass_rate": 0.733,
+   "leak_rate": 0.0,
+   "youden_j": 0.733
+  },
+  {
+   "t": 0.81,
+   "pass_rate": 0.725,
+   "leak_rate": 0.0,
+   "youden_j": 0.725
+  },
+  {
+   "t": 0.82,
+   "pass_rate": 0.721,
+   "leak_rate": 0.0,
+   "youden_j": 0.721
+  },
+  {
+   "t": 0.83,
+   "pass_rate": 0.704,
+   "leak_rate": 0.0,
+   "youden_j": 0.704
+  },
+  {
+   "t": 0.84,
+   "pass_rate": 0.704,
+   "leak_rate": 0.0,
+   "youden_j": 0.704
+  },
+  {
+   "t": 0.85,
+   "pass_rate": 0.688,
+   "leak_rate": 0.0,
+   "youden_j": 0.688
+  },
+  {
+   "t": 0.86,
+   "pass_rate": 0.679,
+   "leak_rate": 0.0,
+   "youden_j": 0.679
+  },
+  {
+   "t": 0.87,
+   "pass_rate": 0.671,
+   "leak_rate": 0.0,
+   "youden_j": 0.671
+  },
+  {
+   "t": 0.88,
+   "pass_rate": 0.658,
+   "leak_rate": 0.0,
+   "youden_j": 0.658
+  },
+  {
+   "t": 0.89,
+   "pass_rate": 0.642,
+   "leak_rate": 0.0,
+   "youden_j": 0.642
+  },
+  {
+   "t": 0.9,
+   "pass_rate": 0.633,
+   "leak_rate": 0.0,
+   "youden_j": 0.633
+  },
+  {
+   "t": 0.91,
+   "pass_rate": 0.621,
+   "leak_rate": 0.0,
+   "youden_j": 0.621
+  },
+  {
+   "t": 0.92,
+   "pass_rate": 0.583,
+   "leak_rate": 0.0,
+   "youden_j": 0.583
+  },
+  {
+   "t": 0.93,
+   "pass_rate": 0.575,
+   "leak_rate": 0.0,
+   "youden_j": 0.575
+  },
+  {
+   "t": 0.94,
+   "pass_rate": 0.546,
+   "leak_rate": 0.0,
+   "youden_j": 0.546
+  },
+  {
+   "t": 0.95,
+   "pass_rate": 0.533,
+   "leak_rate": 0.0,
+   "youden_j": 0.533
+  }
+ ],
+ "recommended": {
+  "threshold": 0.22,
+  "accept_threshold": 0.65,
+  "reject_below": 0.22,
+  "direct_accept_at_or_above": 0.65,
+  "pass_rate": 0.954,
+  "leak_rate": 0.033,
+  "direct_accept_rate": 0.817,
+  "direct_accept_leak_rate": 0.0,
+  "high_safety_margin": 0.02,
+  "single_threshold_youden": {
+   "threshold": 0.2,
+   "youden_j": 0.925
+  }
+ },
+ "read_notes": {
+  "confidence_calibration": "Top1 低于 0.22 直接拒答,达到 0.65 直接放行,中间区交 LLM 自检。低线保留 95.4% 可答题,高线下库外题直接放行率为 0.0%。"
+ }
+}

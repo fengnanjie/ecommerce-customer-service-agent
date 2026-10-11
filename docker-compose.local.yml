@@ -1,0 +1,17 @@
+services:
+  mysql:
+    # 本机已有 MySQL 占用 3306；仅覆盖宿主机端口，容器内部仍使用 3306。
+    ports: !override
+      - "127.0.0.1:3308:3306"
+    # 本地开发限额，避免 Docker/WSL 与 PyCharm 同时运行时无上限抢内存。
+    mem_limit: 768m
+
+  etcd:
+    mem_limit: 256m
+
+  minio:
+    mem_limit: 512m
+
+  milvus-standalone:
+    # 51 个教学知识块远小于生产集合，3 GiB 足够本项目的 Standalone 检索与建索引。
+    mem_limit: 3g

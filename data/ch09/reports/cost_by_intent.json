@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "days": 7,
+  "source": "Langfuse",
+  "generated_at": "2026-09-27 19:20",
+  "window_from": "2026-09-20T11:20:00Z",
+  "window_to": "2026-09-27T11:20:00Z"
+ },
+ "rows": [
+  {
+   "intent": "闲聊",
+   "tokens": 1295,
+   "count": 1,
+   "avg_tokens": 1295,
+   "share": 1.0
+  }
+ ],
+ "total_tokens": 1295,
+ "total_requests": 1,
+ "read_notes": {
+  "cost_by_intent": "这周就一条闲聊请求,单均 1,295 token,占了全部的量,先给它瘦 prompt 或换小模型最划算。"
+ }
+}
